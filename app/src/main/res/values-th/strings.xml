@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">ค้นหา Github</string>
+    <string name="followers">ผู้ติดตาม</string>
+    <string name="following">ติดตาม</string>
+    <string name="hint">ป้อนชื่อผู้ใช้</string>
+    <string name="com_tv">บริษัท:</string>
+    <string name="user_tv">ชื่อผู้ใช้:</string>
+    <string name="loc_tv">สถานที่:</string>
+    <string name="app_detail">ผู้ใช้รายละเอียด</string>
+    <string name="er_msg">มีข้อผิดพลาด</string>
+    <string name="er_msg2">ไม่พบชื่อผู้ใช้!</string>
+</resources>

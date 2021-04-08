@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">بحث جيثب</string>
+    <string name="followers">متابعون</string>
+    <string name="following">إتبع</string>
+    <string name="hint">ادخل اسم المستخدم</string>
+    <string name="com_tv">شركة:</string>
+    <string name="user_tv">اسم االمستخدم:</string>
+    <string name="loc_tv">موقعك:</string>
+    <string name="app_detail">تفاصيل المستخدم</string>
+    <string name="er_msg">هنالك خطأ</string>
+    <string name="er_msg2">المستخدم ليس موجود!</string>
+</resources>

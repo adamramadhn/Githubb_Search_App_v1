@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Pencarian Github</string>
+    <string name="followers">Pengikut</string>
+    <string name="following">Mengikuti</string>
+    <string name="hint">Masukkan nama pengguna</string>
+    <string name="com_tv">Perusahaan:</string>
+    <string name="user_tv">Nama Pengguna:</string>
+    <string name="loc_tv">Lokasi:</string>
+    <string name="app_detail">Detail Pengguna</string>
+    <string name="er_msg">Terjadi Kesalahan</string>
+    <string name="er_msg2">Pengguna tidak ditemukan!</string>
+</resources>

@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/tablayout"
+    style="@style/DetailUser"
+    android:background="@color/primary"
+    tools:context=".Activity.DetailUserActivity">
+
+    <ImageView
+        android:id="@+id/back_btn"
+        style="@style/textDetailUser.backbtn"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ic_baseline_arrow_back_24" />
+
+    <TextView
+        android:id="@+id/textView"
+        style="@style/textDetailUser.actbar"
+        android:text="@string/app_detail"
+        app:layout_constraintBottom_toBottomOf="@+id/back_btn"
+        app:layout_constraintStart_toEndOf="@+id/back_btn"
+        app:layout_constraintTop_toTopOf="@+id/back_btn"
+        tools:ignore="MissingConstraints" />
+
+    <ImageView
+
+        android:id="@+id/avatar"
+        style="@style/avatarDetailUser"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.056"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/back_btn"
+        tools:srcCompat="@tools:sample/avatars" />
+
+    <ImageView
+        android:id="@+id/bahasa_iv"
+        style="@style/settingbtn"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ic_baseline_settings_24"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/name_tv"
+        style="@style/textDetailUser.changeable"
+        app:layout_constraintBottom_toBottomOf="@+id/user_tv"
+        app:layout_constraintStart_toEndOf="@+id/user_tv"
+        app:layout_constraintTop_toTopOf="@+id/user_tv"
+        app:layout_constraintVertical_bias="1.0"
+        tools:text="@string/user_tv" />
+
+
+    <TextView
+        android:id="@+id/location_tv"
+        style="@style/textDetailUser.changeable"
+        app:layout_constraintBottom_toBottomOf="@+id/loc_tv"
+        app:layout_constraintStart_toEndOf="@+id/loc_tv"
+        app:layout_constraintTop_toTopOf="@+id/loc_tv"
+        app:layout_constraintVertical_bias="0.0"
+        tools:text="@string/loc_tv" />
+
+    <TextView
+        android:id="@+id/company_tv"
+        style="@style/textDetailUser.changeable"
+        app:layout_constraintBottom_toBottomOf="@+id/com_tv"
+        app:layout_constraintStart_toEndOf="@+id/com_tv"
+        app:layout_constraintTop_toTopOf="@+id/com_tv"
+        app:layout_constraintVertical_bias="1.0"
+        tools:text="@string/com_tv" />
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        style="?android:attr/progressBarStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="48dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/tabs"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints" />
+
+    <com.google.android.material.tabs.TabLayout
+        android:id="@+id/tabs"
+        style="@style/textDetailUser.tab"
+        android:background="@color/secondaryVariant"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/company_tv"
+        app:tabTextColor="@android:color/white" />
+
+    <androidx.viewpager2.widget.ViewPager2
+        android:id="@+id/view_pager"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tabs"
+        tools:ignore="MissingConstraints">
+
+    </androidx.viewpager2.widget.ViewPager2>
+
+    <TextView
+        android:id="@+id/user_tv"
+        style="@style/textDetailUser.changeable"
+        android:text="@string/user_tv"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView"
+        app:layout_constraintStart_toEndOf="@+id/imageView"
+        app:layout_constraintTop_toTopOf="@+id/imageView"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <ImageView
+
+        android:id="@+id/imageView"
+        style="@style/textDetailUser.icon"
+        android:layout_marginStart="10dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/avatar"
+        app:srcCompat="@drawable/ic_baseline_person_24" />
+
+    <TextView
+        android:id="@+id/loc_tv"
+        style="@style/textDetailUser.changeable"
+        android:text="@string/loc_tv"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView2"
+        app:layout_constraintStart_toEndOf="@+id/imageView2"
+        app:layout_constraintTop_toTopOf="@+id/imageView2"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <ImageView
+
+        android:id="@+id/imageView2"
+        style="@style/textDetailUser.icon"
+        app:layout_constraintStart_toStartOf="@+id/imageView"
+        app:layout_constraintTop_toBottomOf="@+id/imageView"
+        app:srcCompat="@drawable/ic_baseline_location_on_24" />
+
+    <TextView
+        android:id="@+id/com_tv"
+        style="@style/textDetailUser.changeable"
+        android:text="@string/com_tv"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView3"
+        app:layout_constraintStart_toEndOf="@+id/imageView3"
+        app:layout_constraintTop_toTopOf="@+id/imageView3"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <ImageView
+        android:id="@+id/imageView3"
+        style="@style/textDetailUser.icon"
+        app:layout_constraintStart_toStartOf="@+id/imageView2"
+        app:layout_constraintTop_toBottomOf="@+id/imageView2"
+        app:srcCompat="@drawable/ic_baseline_location_city_24" />
+
+    <TextView
+        android:id="@+id/jfollower_tv"
+        style="@style/textDetailUser.topflw"
+        app:layout_constraintEnd_toStartOf="@+id/jfollowing_tv"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/avatar"
+        app:layout_constraintTop_toBottomOf="@+id/tvname"
+        tools:ignore="MissingConstraints"
+        tools:text="@string/followers" />
+
+    <TextView
+        android:id="@+id/textView3"
+        style="@style/textDetailUser"
+        android:text="@string/followers"
+        app:layout_constraintEnd_toEndOf="@+id/jfollower_tv"
+        app:layout_constraintStart_toStartOf="@+id/jfollower_tv"
+        app:layout_constraintTop_toBottomOf="@+id/jfollower_tv" />
+
+    <TextView
+        android:id="@+id/textView4"
+        style="@style/textDetailUser"
+        android:text="@string/following"
+        app:layout_constraintEnd_toEndOf="@+id/jfollowing_tv"
+        app:layout_constraintStart_toStartOf="@+id/jfollowing_tv"
+        app:layout_constraintTop_toBottomOf="@+id/jfollowing_tv" />
+
+    <TextView
+        android:id="@+id/jfollowing_tv"
+        style="@style/textDetailUser.topflw"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/jfollower_tv"
+        app:layout_constraintTop_toBottomOf="@+id/tvname"
+        tools:ignore="MissingConstraints"
+        tools:text="@string/following" />
+
+    <TextView
+        android:id="@+id/tvname"
+        style="@style/textDetailUser.topflw.name"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/avatar"
+        app:layout_constraintTop_toTopOf="@+id/avatar"
+        tools:ignore="MissingConstraints"
+        tools:text="@string/app_name" />
+
+    <ImageView
+        android:id="@+id/share_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="8dp"
+        app:layout_constraintEnd_toStartOf="@+id/bahasa_iv"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ic_baseline_share_24" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

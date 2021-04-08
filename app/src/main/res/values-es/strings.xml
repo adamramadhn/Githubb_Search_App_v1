@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">búsqueda de github</string>
+    <string name="followers">Seguidores</string>
+    <string name="following">seguir</string>
+    <string name="hint">introduzca su nombre de usuario</string>
+    <string name="com_tv">empresa:</string>
+    <string name="user_tv">nombre de usuario:</string>
+    <string name="loc_tv">localización:</string>
+    <string name="app_detail">Usuario De Detalle</string>
+    <string name="er_msg">Hay un error</string>
+    <string name="er_msg2">Usuario no encontrado!</string>
+</resources>
